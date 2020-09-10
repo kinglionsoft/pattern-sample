@@ -1,4 +1,5 @@
 ﻿using System;
+using PatternSample.CSharp;
 
 namespace PatternSample
 {
@@ -7,13 +8,7 @@ namespace PatternSample
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            PoolSample.Run();
         }
-    }
-
-    public interface ITestBase
-    {
-        bool Enable { get; set; }
-
-        void Run();
     }
 }
