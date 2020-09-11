@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.DependencyInjection;
+using PatternSample.Adapter;
 using PatternSample.CSharp;
 
 namespace PatternSample
@@ -12,6 +14,13 @@ namespace PatternSample
             Console.WriteLine("Hello World!");
             // PoolSample.Run();
 
+            var services = new ServiceCollection();
+
+            services.AddLogSample();
+
+            var sp = services.BuildServiceProvider();
+
+            sp.TestLogSample();
         }
     }
 }
