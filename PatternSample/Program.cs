@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using PatternSample.CSharp;
 
 namespace PatternSample
@@ -8,7 +10,8 @@ namespace PatternSample
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            PoolSample.Run();
+            // PoolSample.Run();
+
         }
     }
 }
